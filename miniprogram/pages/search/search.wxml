@@ -1,0 +1,25 @@
+<import src="search.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{skeleton}}" />
+<view class = "head">
+  <van-sticky>
+  <van-search
+  value="{{ value }}"
+  placeholder="请输入商品关键词"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+  clearable
+>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+  </van-sticky>
+</view>
+<view class="body">
+<view wx:for="{{array}}" wx:key="index"  data-id="{{item._openid}}" bindtap="toShop" >
+<van-card  tag="new"  price="{{item.goods_price}}"  desc="{{item.goods_info}}"  title="{{item.goods_name}}" thumb="{{ item.goods_img }}" >
+</van-card>
+</view>
+<i-load-more tip="我也是有底线的" loading ="{{false}}"/>
+</view>
+
+

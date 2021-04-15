@@ -1,0 +1,8 @@
+.userinfo{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+.body{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}

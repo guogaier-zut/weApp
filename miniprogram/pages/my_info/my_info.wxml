@@ -1,0 +1,26 @@
+<van-notice-bar
+  left-icon="volume-o"
+  text="为方便通知您取餐，请将您的邮箱填写完整，否则无法收到取餐邮件"
+/>
+<van-cell-group>
+  <van-field
+    title-width="4em"
+    value="{{nickName}}"
+    label="昵称："
+    left-icon="contact"
+    readonly
+    border="true"
+    bindtap="tip"
+  />
+  <van-field
+    title-width="4em"
+    value="{{value}}"
+    label="邮 箱："
+    left-icon="comment-o"
+    border="true"
+    placeholder="请输入您的邮箱"
+    bind:change="onChange"
+    clearable
+  />
+</van-cell-group>
+<button style="margin-top:50px" type="primary" bindtap="submit">提交</button>

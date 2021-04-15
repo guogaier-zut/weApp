@@ -1,0 +1,10 @@
+<view class="box" wx:for="{{order}}" wx:key="index" data-id="{{item._id}}">
+  <van-panel title="{{item.date}}" status="订单总价：￥{{item.price}}" use-footer-slot>
+  <view wx:for="{{item.foods}}">
+    <van-cell title="{{item.goods_name}}" value="￥{{item.goods_price}}" />
+  </view>
+  <view slot="footer">
+  <van-steps  steps="{{ steps }}"  active="{{ item.state }}"  active-icon="success"  active-color="#19be6b"/>
+  </view>
+</van-panel>
+</view>

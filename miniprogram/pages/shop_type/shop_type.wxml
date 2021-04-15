@@ -1,0 +1,30 @@
+<van-notify id="van-notify" />
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+          <swiper-item>
+            <view style="height:100%;width:100%;">            
+              <image style="height:100%;width:100%;" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1165395806,2099494389&fm=26&gp=0.jpg"></image>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view style="height:100%;width:100%;">  
+              <image style="height:100%;width:100%;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608208189730&di=223cfa1bf0aafcb3f09dd96e77fbc498&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171103%2F9e3dee06ab14496897be7be329d1dafc.png"></image>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view style="height:100%;width:100%;">             
+              <image style="height:100%;width:100%;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608208228508&di=9d449ca2d34d4f59715a939676a2503b&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201902%2F19%2F20190219135620_mktig.jpg"></image>
+            </view>
+          </swiper-item>
+</swiper>
+
+<view wx:for="{{Merchants}}" wx:key="{{index}}" data-id="{{item.S_id}}" bindtap="click">
+  <view class="Merchant_card"  id="{{index}}">
+  <image class="Merchant_image" src="{{item.S_image}}" />
+  <view class="item_info">
+    <text class="item_name">{{item.S_name}}</text>
+    <text class="item_content">{{item.S_content}}</text>
+    <text class="">{{item.S_location}}</text>
+</view>
+</view>
+</view>
+<i-load-more tip="我也是有底线的" loading="{{ false }}" />

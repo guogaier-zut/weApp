@@ -1,0 +1,22 @@
+<view class="head">
+<i-card  wx:if="{{!hasUserInfo && canIUse}}"  extra="点击登录获取微信头像" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg"  >
+  <view slot="content">  
+    <button type="primary" bindgetuserinfo="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo">登录</button>
+  </view>
+</i-card> 
+  <block wx:else>
+    <i-card title="" title="{{userInfo.nickName}}" thumb="{{userInfo.avatarUrl}}">
+      <view slot="footer">这家伙很懒什么也没有留下</view>
+    </i-card>
+  </block>
+</view>
+<view class="body">
+
+<van-grid square gutter="10" column-num="3">
+  <van-grid-item icon="user-o" text="我的信息" bindtap="my_info"/>
+  <van-grid-item icon="column" text="我的订单" bindtap="my_order"/>
+  <van-grid-item icon="todo-list" text="历史订单" bindtap="order_history"/>
+  <van-grid-item icon="flag-o" text="记录体重"  bindtap="toWeight"/>
+</van-grid>
+  
+</view>

@@ -1,0 +1,38 @@
+.img{
+  border: orange solid 3px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+  align-items: center;
+}
+.detail {
+  border: skyblue solid 3px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+}
+.detail .title {
+  font-size: 40rpx;
+  margin: 10rpx;
+  color: black;
+  text-align: justify;
+}
+.detail .price {
+  color: red;
+  font-size: 40rpx;
+  margin: 10rpx;
+}
+.user{
+  border: skyblue solid 3px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+  font-size: 40rpx;
+  margin: 10rpx;
+}

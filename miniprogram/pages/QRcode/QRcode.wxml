@@ -1,0 +1,9 @@
+<view class="main">
+<text class="tip">👇取餐码👇</text>
+<view class='img'>
+<image show-menu-by-longpress="true" wx:if="{{imageurl}}" src="{{imageurl}}"></image>
+</view>
+<text>订单id：{{orderid}}</text>
+<button style="margin-top:40px" type="primary" bindtap="showQR">刷新二维码</button>
+<button style="margin-top:40px" type="primary" bindtap="finish">完成订单</button>
+</view>

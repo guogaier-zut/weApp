@@ -1,0 +1,75 @@
+<view class="location">
+<van-icon name="location-o" color='black' />
+<text>{{location}}</text>
+</view>
+<van-notify id="van-notify" />
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+          <swiper-item>
+            <view style="height:100%;width:100%;">            
+              <image style="height:100%;width:100%;" src="../../images/door.jpg"></image>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view style="height:100%;width:100%;">  
+              <image style="height:100%;width:100%;" src="../../images/soft.jpg"></image>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view style="height:100%;width:100%;">             
+              <image style="height:100%;width:100%;" src="../../images/zut.png"></image>
+            </view>
+          </swiper-item>
+</swiper>
+<van-popup custom-style="width:70%;height:40%;background-color:rgba(0,0,0,0)" show="{{ show }}" closeable bind:close="onClose">
+  <image style="height:100%;width:100%" src="../../images/logo.png"></image>
+  <button  bindgetuserinfo="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo">11213123</button>
+</van-popup>
+<van-grid column-num="5" square>
+  <van-grid-item use-slot bindtap="menu">
+    <image
+      style="width: 70%; height: 60px;"
+      src="../../images/tuijian.png"
+    />
+    <text>随机</text>
+  </van-grid-item>
+  <van-grid-item use-slot bindtap="search">
+    <image
+      style="width: 70%; height: 60px;"
+      src="../../images/sousuo.png"
+    />
+    <text>搜索</text>
+  </van-grid-item>
+  <van-grid-item use-slot bindtap="breakfast">
+    <image
+      style="width: 70%; height: 60px;"
+      src="../../images/breakfast.png"
+    />
+    <text>早餐</text>
+  </van-grid-item>
+  <van-grid-item use-slot bindtap="lunch">
+    <image
+      style="width: 70%; height: 60px;"
+      src="../../images/lunch.png"
+    />
+    <text>午餐</text>
+  </van-grid-item>
+  <van-grid-item use-slot bindtap="dinner">
+    <image
+      style="width: 70%; height: 60px;"
+      src="../../images/dinner.png"
+    />
+    <text>晚餐</text>
+  </van-grid-item>
+</van-grid>
+
+<view wx:for="{{Merchants}}" wx:key="{{index}}" data-id="{{item._id}}" bindtap="click">
+  <view class="Merchant_card"  id="{{index}}">
+  <image class="Merchant_image" src="{{item.M_image}}" />
+  <view class="item_info">
+    <text class="item_name">{{item.M_name}}</text>
+    <text class="item_content">{{item.M_content}}</text>
+</view>
+</view>
+</view>
+<i-load-more tip="我也是有底线的" loading="{{ loading }}" />
+

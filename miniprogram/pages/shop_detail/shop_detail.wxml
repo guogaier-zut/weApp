@@ -1,0 +1,37 @@
+<image class="activity" src="{{imgurl}}"></image>
+<view class="body">
+<view wx:for="{{array}}" wx:key="index"  data-index="{{index}}" bindtap="add"  >
+<van-card  tag="new"  price="{{item.goods_price}}"  desc="{{item.goods_info}}"  title="{{item.goods_name}}" thumb="{{ item.goods_img }}" >
+<view slot="footer">
+    <van-button size="mini">加购</van-button>
+</view>
+</van-card>
+</view>
+<i-load-more tip="我也是有底线的" loading="{{ false }}" />
+</view>
+<view class="main">
+<!-- 弹出层 -->
+<van-popup  show="{{ show }}"  position="bottom"  custom-style="height: 50%"  bind:close="onClose">
+  <van-divider contentPosition="center" textColor="#1989fa">购物车</van-divider>
+<view wx:for="{{food}}"  wx:key="index" data-id="{{item.id}}">
+  <van-cell-group>
+    <van-cell title="{{item.goods_name}}" value="￥{{item.goods_price}}" />
+  </van-cell-group>
+</view>
+<van-submit-bar
+  price="{{price*100}}"
+  button-text="提交订单"
+  bind:submit="onSubmit"
+>
+<van-tag type="primary"> 
+  <van-button type="info" size="mini" bindtap="clearAll">清空购物车</van-button>
+</van-tag>
+</van-submit-bar>
+
+</van-popup>
+<!-- 底部悬浮购物车 -->
+<view class="foot">
+  <van-icon class="sell" size="50px" name="shopping-cart-o" info="{{num}}" bindtap="showPopup" />
+</view>
+</view>
+

@@ -1,0 +1,252 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/12/21 上午8:14:45 
+使用方法：
+在 D:\We App\点餐系统\miniprogram\pages\search\search.wxml 引入模板
+
+```
+<import src="search.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 D:\We App\点餐系统\miniprogram\pages\search\search.wxss 中引入样式
+```
+@import "./search.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="head">
+      <view is="miniprogram_npm/@vant/weapp/sticky/index">
+        <view class=" van-sticky sticky-index--van-sticky" style="height: 54px;z-index: 99;">
+          <view class="van-sticky-wrap sticky-index--van-sticky-wrap van-sticky-wrap--fixed sticky-index--van-sticky-wrap--fixed" style="top: 0px;z-index: 99;">
+            <view is="miniprogram_npm/@vant/weapp/search/index">
+              <view class="van-search search-index--van-search van-search--withaction search-index--van-search--withaction " style="background: #ffffff">
+                <view class="van-search__content search-index--van-search__content van-search__content--square search-index--van-search__content--square">
+                  <view is="miniprogram_npm/@vant/weapp/field/index" class="van-search__field search-index--van-search__field ">
+                    <view is="miniprogram_npm/@vant/weapp/cell/index">
+                      <view class="field-index--van-field van-cell weapp-cell-index--van-cell van-cell--borderless weapp-cell-index--van-cell--borderless sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="padding: 5px 10px 5px 0; background-color: transparent;">
+                        <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap weapp-cell-index--van-cell__left-icon-wrap">
+                          <view class="weapp-cell-index--van-cell__left-icon van-icon weapp-icon-index--van-icon van-icon-search weapp-icon-index--van-icon-search sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;"></view>
+                        </view>
+                        <view class="van-cell__value weapp-cell-index--van-cell__value ">
+                          <view class="van-field__body field-index--van-field__body van-field__body--search field-index--van-field__body--search">
+                            <view class="van-field__input field-index--van-field__input sk-image" cursor="-1" maxlength="-1" placeholder="请输入商品关键词" placeholder-class="van-field__placeholder" placeholder-style="true" selection-end="-1" selection-start="-1"
+                              type="search" value="true"></view>
+                          </view>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+                <view class="van-search__action search-index--van-search__action" hover-class="van-search__action--hover" hover-stay-time="70">
+                  <view class="sk-transparent sk-text-29-4118-831 sk-text">搜索</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="body">
+      <view data-id="1">
+        <view is="miniprogram_npm/@vant/weapp/card/index">
+          <view class=" van-card weapp-card-index--van-card">
+            <view class="van-card__header weapp-card-index--van-card__header">
+              <view class="van-card__thumb weapp-card-index--van-card__thumb">
+                <image class="van-card__img weapp-card-index--van-card__img sk-image" mode="aspectFit"></image>
+                <view is="miniprogram_npm/@vant/weapp/tag/index">
+                  <view class="weapp-card-index--van-card__tag van-tag tag-index--van-tag van-tag--danger tag-index--van-tag--danger van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-12-5000-37 sk-text sk-pseudo sk-pseudo-circle" style="true">
+                    new
+                  </view>
+                </view>
+              </view>
+              <view class="van-card__content weapp-card-index--van-card__content van-card__content weapp-card-index--van-card__content">
+                <view>
+                  <view class="van-card__title weapp-card-index--van-card__title sk-transparent sk-text-12-5000-153 sk-text">老八秘制小汉堡</view>
+                  <view class="van-card__desc weapp-card-index--van-card__desc sk-transparent sk-text-20-0000-717 sk-text">https://cdn.jsdelivr.net/gh/OrientalFantasy/file/logo/logo-640.jpg</view>
+                </view>
+                <view class="van-card__bottom weapp-card-index--van-card__bottom">
+                  <view class="van-card__price weapp-card-index--van-card__price ">
+                    <text class="sk-transparent sk-opacity">¥</text>
+                    <text class="van-card__price-integer weapp-card-index--van-card__price-integer sk-transparent sk-opacity">5</text>
+                    <text class="van-card__price-decimal weapp-card-index--van-card__price-decimal"></text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="van-card__footer weapp-card-index--van-card__footer"></view>
+          </view>
+        </view>
+      </view>
+      <view data-id="1">
+        <view is="miniprogram_npm/@vant/weapp/card/index">
+          <view class=" van-card weapp-card-index--van-card">
+            <view class="van-card__header weapp-card-index--van-card__header">
+              <view class="van-card__thumb weapp-card-index--van-card__thumb">
+                <image class="van-card__img weapp-card-index--van-card__img sk-image" mode="aspectFit"></image>
+                <view is="miniprogram_npm/@vant/weapp/tag/index">
+                  <view class="weapp-card-index--van-card__tag van-tag tag-index--van-tag van-tag--danger tag-index--van-tag--danger van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-12-5000-156 sk-text sk-pseudo sk-pseudo-circle" style="true">
+                    new
+                  </view>
+                </view>
+              </view>
+              <view class="van-card__content weapp-card-index--van-card__content van-card__content weapp-card-index--van-card__content">
+                <view>
+                  <view class="van-card__title weapp-card-index--van-card__title sk-transparent sk-text-12-5000-43 sk-text">老八秘制中汉堡</view>
+                  <view class="van-card__desc weapp-card-index--van-card__desc sk-transparent sk-text-20-0000-880 sk-text">https://cdn.jsdelivr.net/gh/OrientalFantasy/file/logo/logo-640.jpg</view>
+                </view>
+                <view class="van-card__bottom weapp-card-index--van-card__bottom">
+                  <view class="van-card__price weapp-card-index--van-card__price ">
+                    <text class="sk-transparent sk-opacity">¥</text>
+                    <text class="van-card__price-integer weapp-card-index--van-card__price-integer sk-transparent sk-opacity">8</text>
+                    <text class="van-card__price-decimal weapp-card-index--van-card__price-decimal"></text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="van-card__footer weapp-card-index--van-card__footer"></view>
+          </view>
+        </view>
+      </view>
+      <view data-id="1">
+        <view is="miniprogram_npm/@vant/weapp/card/index">
+          <view class=" van-card weapp-card-index--van-card">
+            <view class="van-card__header weapp-card-index--van-card__header">
+              <view class="van-card__thumb weapp-card-index--van-card__thumb">
+                <image class="van-card__img weapp-card-index--van-card__img sk-image" mode="aspectFit"></image>
+                <view is="miniprogram_npm/@vant/weapp/tag/index">
+                  <view class="weapp-card-index--van-card__tag van-tag tag-index--van-tag van-tag--danger tag-index--van-tag--danger van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-12-5000-574 sk-text sk-pseudo sk-pseudo-circle" style="true">
+                    new
+                  </view>
+                </view>
+              </view>
+              <view class="van-card__content weapp-card-index--van-card__content van-card__content weapp-card-index--van-card__content">
+                <view>
+                  <view class="van-card__title weapp-card-index--van-card__title sk-transparent sk-text-12-5000-145 sk-text">老八秘制大汉堡</view>
+                  <view class="van-card__desc weapp-card-index--van-card__desc sk-transparent sk-text-20-0000-706 sk-text">https://cdn.jsdelivr.net/gh/OrientalFantasy/file/logo/logo-640.jpg</view>
+                </view>
+                <view class="van-card__bottom weapp-card-index--van-card__bottom">
+                  <view class="van-card__price weapp-card-index--van-card__price ">
+                    <text class="sk-transparent sk-opacity">¥</text>
+                    <text class="van-card__price-integer weapp-card-index--van-card__price-integer sk-transparent sk-text-10-0000-232 sk-text">12</text>
+                    <text class="van-card__price-decimal weapp-card-index--van-card__price-decimal"></text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="van-card__footer weapp-card-index--van-card__footer"></view>
+          </view>
+        </view>
+      </view>
+      <view data-id="2">
+        <view is="miniprogram_npm/@vant/weapp/card/index">
+          <view class=" van-card weapp-card-index--van-card">
+            <view class="van-card__header weapp-card-index--van-card__header">
+              <view class="van-card__thumb weapp-card-index--van-card__thumb">
+                <image class="van-card__img weapp-card-index--van-card__img sk-image" mode="aspectFit"></image>
+                <view is="miniprogram_npm/@vant/weapp/tag/index">
+                  <view class="weapp-card-index--van-card__tag van-tag tag-index--van-tag van-tag--danger tag-index--van-tag--danger van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-12-5000-481 sk-text sk-pseudo sk-pseudo-circle" style="true">
+                    new
+                  </view>
+                </view>
+              </view>
+              <view class="van-card__content weapp-card-index--van-card__content van-card__content weapp-card-index--van-card__content">
+                <view>
+                  <view class="van-card__title weapp-card-index--van-card__title sk-transparent sk-text-12-5000-241 sk-text">炸鸡腿</view>
+                  <view class="van-card__desc weapp-card-index--van-card__desc sk-transparent sk-text-20-0000-777 sk-text">https://cdn.jsdelivr.net/gh/OrientalFantasy/file/logo/logo-640.jpg</view>
+                </view>
+                <view class="van-card__bottom weapp-card-index--van-card__bottom">
+                  <view class="van-card__price weapp-card-index--van-card__price ">
+                    <text class="sk-transparent sk-opacity">¥</text>
+                    <text class="van-card__price-integer weapp-card-index--van-card__price-integer sk-transparent sk-opacity">5</text>
+                    <text class="van-card__price-decimal weapp-card-index--van-card__price-decimal"></text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="van-card__footer weapp-card-index--van-card__footer"></view>
+          </view>
+        </view>
+      </view>
+      <view data-id="2">
+        <view is="miniprogram_npm/@vant/weapp/card/index">
+          <view class=" van-card weapp-card-index--van-card">
+            <view class="van-card__header weapp-card-index--van-card__header">
+              <view class="van-card__thumb weapp-card-index--van-card__thumb">
+                <image class="van-card__img weapp-card-index--van-card__img sk-image" mode="aspectFit"></image>
+                <view is="miniprogram_npm/@vant/weapp/tag/index">
+                  <view class="weapp-card-index--van-card__tag van-tag tag-index--van-tag van-tag--danger tag-index--van-tag--danger van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-12-5000-420 sk-text sk-pseudo sk-pseudo-circle" style="true">
+                    new
+                  </view>
+                </view>
+              </view>
+              <view class="van-card__content weapp-card-index--van-card__content van-card__content weapp-card-index--van-card__content">
+                <view>
+                  <view class="van-card__title weapp-card-index--van-card__title sk-transparent sk-text-12-5000-484 sk-text">炸鸡块</view>
+                  <view class="van-card__desc weapp-card-index--van-card__desc sk-transparent sk-text-20-0000-208 sk-text">https://cdn.jsdelivr.net/gh/OrientalFantasy/file/logo/logo-640.jpg</view>
+                </view>
+                <view class="van-card__bottom weapp-card-index--van-card__bottom">
+                  <view class="van-card__price weapp-card-index--van-card__price ">
+                    <text class="sk-transparent sk-opacity">¥</text>
+                    <text class="van-card__price-integer weapp-card-index--van-card__price-integer sk-transparent sk-opacity">8</text>
+                    <text class="van-card__price-decimal weapp-card-index--van-card__price-decimal"></text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="van-card__footer weapp-card-index--van-card__footer"></view>
+          </view>
+        </view>
+      </view>
+      <view data-id="2">
+        <view is="miniprogram_npm/@vant/weapp/card/index">
+          <view class=" van-card weapp-card-index--van-card">
+            <view class="van-card__header weapp-card-index--van-card__header">
+              <view class="van-card__thumb weapp-card-index--van-card__thumb">
+                <image class="van-card__img weapp-card-index--van-card__img sk-image" mode="aspectFit"></image>
+                <view is="miniprogram_npm/@vant/weapp/tag/index">
+                  <view class="weapp-card-index--van-card__tag van-tag tag-index--van-tag van-tag--danger tag-index--van-tag--danger van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-12-5000-870 sk-text sk-pseudo sk-pseudo-circle" style="true">
+                    new
+                  </view>
+                </view>
+              </view>
+              <view class="van-card__content weapp-card-index--van-card__content van-card__content weapp-card-index--van-card__content">
+                <view>
+                  <view class="van-card__title weapp-card-index--van-card__title sk-transparent sk-text-12-5000-435 sk-text">鸡米花</view>
+                  <view class="van-card__desc weapp-card-index--van-card__desc sk-transparent sk-text-20-0000-429 sk-text">https://cdn.jsdelivr.net/gh/OrientalFantasy/file/logo/logo-640.jpg</view>
+                </view>
+                <view class="van-card__bottom weapp-card-index--van-card__bottom">
+                  <view class="van-card__price weapp-card-index--van-card__price ">
+                    <text class="sk-transparent sk-opacity">¥</text>
+                    <text class="van-card__price-integer weapp-card-index--van-card__price-integer sk-transparent sk-text-10-0000-374 sk-text">10</text>
+                    <text class="van-card__price-decimal weapp-card-index--van-card__price-decimal"></text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="van-card__footer weapp-card-index--van-card__footer"></view>
+          </view>
+        </view>
+      </view>
+      <view data-id="3">
+        <view is="miniprogram_npm/@vant/weapp/card/index">
+          <view class=" van-card weapp-card-index--van-card">
+            <view class="van-card__header weapp-card-index--van-card__header">
+              <view class="van-card__thumb weapp-card-index--van-card__thumb">
+                <image class="van-card__img weapp-card-index--van-card__img sk-image" mode="aspectFit"></image>
+              </view>
+              <view class="van-card__content weapp-card-index--van-card__content van-card__content weapp-card-index--van-card__content">
+                <view>
+                  <view class="van-card__title weapp-card-index--van-card__title sk-transparent sk-text-12-5000-600 sk-text">麻辣鸡公煲</view>
+                  <view class="van-card__desc weapp-card-index--van-card__desc sk-transparent sk-text-20-0000-513 sk-text">好吃不贵</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

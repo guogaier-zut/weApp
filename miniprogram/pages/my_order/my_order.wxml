@@ -1,0 +1,15 @@
+<van-sticky>
+  <van-notice-bar  text="温馨提示：如果需要取消订单，长按要取消的订单即可取消订单哦！！!" left-icon="bullhorn-o" />
+</van-sticky>
+<van-skeleton title  row="20" loading="{{ loading }}">
+<view class="box" wx:for="{{order}}" wx:key="index" data-id="{{item._id}}" bindtap="my_order" bindlongpress="cancel">
+  <van-panel title="{{item.date}}" status="订单总价：￥{{item.price}}" use-footer-slot>
+  <view wx:for="{{item.foods}}">
+    <van-cell title="{{item.goods_name}}" value="￥{{item.goods_price}}" />
+  </view>
+  <view slot="footer">
+  <van-steps  steps="{{ steps }}"  active="{{ item.state }}"  active-icon="success"  active-color="#19be6b"/>
+  </view>
+</van-panel>
+</view>
+</van-skeleton>

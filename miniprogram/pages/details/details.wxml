@@ -1,0 +1,19 @@
+<view class="main"> 
+<view class="img">
+<image src="{{goods_img}}"></image>
+</view>
+<view class="detail">
+    <text class="title">{{goods_name}}</text>
+    <text class="price">￥{{goods_price}}</text>
+</view>
+  <text class="user">联系方式：{{goods_user}}</text>
+<van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="联系卖家" bind:click="seller" />
+  <van-goods-action-button
+    text="加入购物车"
+    type="warning"
+    bind:click="add"
+  />
+  <van-goods-action-button text="立即购买" bind:click="buy" />
+</van-goods-action>
+</view>

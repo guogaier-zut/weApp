@@ -1,0 +1,17 @@
+<view class="main">
+  <text>是不是每天都在烦恼到底要吃什么</text>
+  <text>  </text>
+  <text>来来来</text>
+  <text>  </text>
+  <text>我们帮您选</text>
+<view class="container-out">
+ <view class="circle" wx:for="{{circleList}}" style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};"></view>
+ <view class="container-in">
+  <view class="content-out" wx:for="{{awardList}}" style="top:{{item.topAward}}rpx;left:{{item.leftAward}}rpx;background-color: {{(index==indexSelect)?colorAwardSelect:colorAwardDefault}};">
+   <image class="award-image" src="{{item.imageAward}}"></image>
+  </view>
+  <view class="start-btn"  style=" background-color:{{isRunning?'#e7930a':'#ffe400'}}">干饭</view>
+ </view>
+</view>
+<van-button type="primary"  bindtap="startGame" loading="{{loading}}" disabled="{{loading}}"  loading-text="抽取中...">随机干饭</van-button>
+</view>
